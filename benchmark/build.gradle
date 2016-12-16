@@ -1,0 +1,58 @@
+group 'benchmark'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'shadow'
+sourceCompatibility = 1.8
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            name 'Shadow'
+            url 'http://dl.bintray.com/content/johnrengelman/gradle-plugins'
+        }
+    }
+    dependencies {
+        classpath 'org.gradle.plugins:shadow:0.7.4'
+    }
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'org.openjdk.jmh.Main'
+    }
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+build.doLast {
+    tasks.shadow.execute()
+}
+
+
+shadow {
+    outputFile = new File('build/libs/microbenchmarks.jar')
+}
+
+ext {
+    lib = [
+            jmh: 'org.openjdk.jmh:jmh-core:1.17.2'
+    ]
+}
+
+
+dependencies {
+    compile lib.jmh
+    compile "org.openjdk.jmh:jmh-generator-annprocess:1.17"
+    compile "junit:junit:4.12"
+}
+
+
+
+
+
+

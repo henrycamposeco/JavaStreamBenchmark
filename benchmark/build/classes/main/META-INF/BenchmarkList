@@ -1,0 +1,6 @@
+JMH S 18 com.test.Benchmark S 60 com.test.generated.Benchmark_streamMapGetMinParallel_jmhTest S 23 streamMapGetMinParallel S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 18 com.test.Benchmark S 57 com.test.generated.Benchmark_streamGetMinParallel_jmhTest S 20 streamGetMinParallel S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 18 com.test.Benchmark S 50 com.test.generated.Benchmark_forEachGetMin_jmhTest S 13 forEachGetMin S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 18 com.test.Benchmark S 47 com.test.generated.Benchmark_loopGetMin_jmhTest S 10 loopGetMin S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 18 com.test.Benchmark S 49 com.test.generated.Benchmark_streamGetMin_jmhTest S 12 streamGetMin S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
+JMH S 18 com.test.Benchmark S 52 com.test.generated.Benchmark_streamMapGetMin_jmhTest S 15 streamMapGetMin S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 11 NANOSECONDS E E 
